@@ -27,6 +27,10 @@ public:
 
     QFrame* crtLineFrame();
 
+    void onSearchTextChanged(QString str);
+    void onRgbBtnClicked();
+    void onSaveBtnClicked();
+
     void onColorChanged();
 
 private:
@@ -38,6 +42,8 @@ private:
     QPushButton* m_rgbBtn;
     QLabel* m_iconLabel;
     QLabel* m_iconInfoLabel;
+    QPushButton* m_saveBtn;
+    QString savePath;
     QTextEdit* m_codeEdit;
 
     QMetaEnum m_enum;

@@ -5,10 +5,9 @@
 
 void setStyle(QApplication& app)
 {
-    // apply qss
     QFile qss(":/lightstyle.qss");
     qss.open(QFile::ReadOnly);
-    app.setStyleSheet(qss.readAll() /*+ app.styleSheet()*/);
+    app.setStyleSheet(qss.readAll());
     qss.close();
 }
 
