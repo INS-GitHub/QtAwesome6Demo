@@ -266,7 +266,8 @@ void MainWindow::onSaveBtnClicked()
                        savePath + QString("/%1_%2.png").arg(m_enum.valueToKey(m_searchedIconIndexs[m_selectIndex])).arg(m_pixmapSize), "*.png");
     if(!fileName.isEmpty()) {
         savePath = fileName.left(fileName.lastIndexOf("/"));
-        m_iconLabel->pixmap()->save(fileName);
+        QPixmap pixmap = QAwesome->icon(m_searchedIconIndexs[m_selectIndex], m_color).pixmap(QSize(m_pixmapSize, m_pixmapSize));
+        pixmap.save(fileName);
     }
     settings.setValue("SavePath", savePath);
 }
