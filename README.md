@@ -25,3 +25,5 @@ QPushButton* musicButton = new QPushButton(awesome->icon(fa::fa_solid, fa::music
 ## Others
 https://github.com/gamecreature/QtAwesome#readme
   
+## Search Tool
+![image](https://github.com/INS-GitHub/QtAwesome6Demo/blob/master/readme.jpg)
